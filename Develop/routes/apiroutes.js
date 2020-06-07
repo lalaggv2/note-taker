@@ -4,15 +4,24 @@ const express = require("express");
 const path = require("path");
 const app = express();
 
+//call the getNotes() from the class that you required
+// res.json(note) like
+
 app.get("/api/notes", function (req, res) {
   // notes = Note.getNotes();
   // res.json(notes)
   res.json([]);
 });
 
+//post request will be the same as get
+
 app.post("/api/notes", function (req, res) {
   res.json([]);
 });
+
+// call the deleteNote()
+// delete request for /api/notes/:id
+//if you don't add teh id the delete will delete all the notes
 
 app.delete("/api/notes/:id", function (req, res) {
   const id = req.params.id;
@@ -20,13 +29,3 @@ app.delete("/api/notes/:id", function (req, res) {
 });
 
 module.exports = app;
-
-//call the getNotes() from the class that you required
-// res.json(note) like
-
-//post request will be the same as teh get
-
-// delete request for /api/notes/:id
-//if you don't add teh id the delete will delete all the notes
-
-// call the deleteNote()
