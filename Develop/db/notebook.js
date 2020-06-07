@@ -11,6 +11,9 @@ class Notebook {
 
   //get notes()
   // inside of this function you're going want to read from the db.json file the contests od the json file will be displayed on the page to read a file - readFile() which is a part of the 'fs' package
+  getNotes() {
+    return this.notes;
+  }
 
   //addNotes()
 
