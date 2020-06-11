@@ -13,11 +13,15 @@ app.get("/api/notes", function (req, res) {
   res.json([]);
 });
 
+app.post('./notebook', (req, res) => {
+  res.send("save note";)
+});
+
 //post request will be the same as get
 
-app.post("/api/notes", function (req, res) {
-  res.json([]);
-});
+// app.post("/api/notes", function (req, res) {
+//   res.json([]);
+// });
 
 // call the deleteNote()
 // delete request for /api/notes/:id

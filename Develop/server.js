@@ -15,11 +15,11 @@ server.use(apiController);
 const htmlController = require("./routes/htmRoutes");
 server.use(htmlController);
 
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+server.use(express.urlencoded({ extended: true }));
+server.use(express.json());
 
-app.use('/notes', apiController);
-app.use("/", htmlController)
+server.use('/notes', apiController);
+server.use("/", htmlController)
 
 server.listen(PORT, () => {
   console.log("server listening on port ", PORT);
