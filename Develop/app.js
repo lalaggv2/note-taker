@@ -1,10 +1,10 @@
-$('#activity-form').on('submit', (event) => {
+$('#notes').on('submit', (event) => {
     event.preventDefault();
     // - create an activity object
-    const newActivity = {
-      mileage: $('#mileage').val(),
-      duration: $('#duration').val(),
-      date: $('#date').val(),
+    const newNote = {
+      title: $('.noteTitle').val(),
+      text: $('.noteText').val(),
+
     };
 
     // - POST activity data to API @ /api/activities
