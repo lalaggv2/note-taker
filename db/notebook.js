@@ -14,7 +14,7 @@ class Notebook {
 
 
   //get notes()
-  // inside of this function you're going want to read from the db.json file the contests od the json file will be displayed on the page to read a file - readFile() which is a part of the 'fs' package
+  // inside of this function you're going want to read from the db.json file the contents 
   getNotes() {
     return this.notes;
   }
@@ -33,7 +33,7 @@ class Notebook {
   }
 
   deleteNote(id) {
-    //check against all opf the notes to see which oen has the id you're looking to delete
+    //check against all of the notes to see which oen has the id you're looking to delete
     this.notes = this.notes.filter((note) => {
       return note.id !== id;
     });
@@ -46,7 +46,6 @@ class Notebook {
         console.log("note saved!");
       }
     );
-    // call getNotes() and filter results to find the id you're looking for an return the ones that don't match
   }
 }
 
