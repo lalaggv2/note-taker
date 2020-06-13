@@ -1,22 +1,23 @@
 //require the class //files to you can use the functions you created
-const Note = require("../db/notebook.js");
+const NoteBook = require("../db/notebook.js");
 const express = require("express");
 const path = require("path");
 const app = express();
-
+let notebook = new NoteBook();
 //call the getNotes() from the class that you required
 // res.json(note) like
 
 app.get("/api/notes", function (req, res) {
   // notes = Note.getNotes();
   // res.json(notes)
-  res.json([]);
+  res.json(notebook.getNotes());
 });
 
 //post request will be the same as get
 
 app.post("/api/notes", function (req, res) {
-  res.json([]);
+  notebook.addNote(req.body);
+  res.json(true);
 });
 
 // call the deleteNote()
@@ -25,7 +26,8 @@ app.post("/api/notes", function (req, res) {
 
 app.delete("/api/notes/:id", function (req, res) {
   const id = req.params.id;
-  res.json([]);
+  notebook.deleteNote(id);
+  res.json(true);
 });
 
 module.exports = app;
