@@ -26,8 +26,3 @@ server.listen(PORT, () => {
   console.log("server listening on port ", PORT);
 });
 
-
-
-// var currentNotes = window.location.origin;
-
-// $.ajax{url: currentUrl + "/api/notes.html" method: 'GET'
