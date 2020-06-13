@@ -10,7 +10,7 @@ server.use(express.urlencoded({ extended: true }));
 server.use(express.json());
 
 //get request for /api/notes
-const apiController = require("./routes/apiroutes");
+const apiController = require("./routes/apiRoutes");
 server.use(apiController);
 
 const htmlController = require("./routes/htmRoutes");
