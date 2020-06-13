@@ -14,7 +14,7 @@ app.get("/api/notes", function (req, res) {
 });
 
 app.post('./notebook', (req, res) => {
-  res.send("save note";)
+  res.send("save note");
 });
 
 //post request will be the same as get
