@@ -1,7 +1,6 @@
 # Unit 11 Express Homework: Note Taker
 
 #### note-taker ####
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/lalaggv2/note-taker)
 
 ### Email Address ###
 
