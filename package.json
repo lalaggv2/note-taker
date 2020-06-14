@@ -2,7 +2,8 @@
   "name": "note-taker",
   "version": "1.0.0",
   "engines": {
-    "node": "12.x"
+    "node": "12.x",
+    "npm": "6.x"
   },
   "description": "",
   "main": "server.js",
@@ -14,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
-    "uuidv4": "^6.1.0"
+    "uuidv4": "^6.1.0",
+    "fs": "0.0.1-security"
   }
 }
