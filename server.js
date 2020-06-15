@@ -16,8 +16,8 @@ app.use(apiController);
 const htmlController = require("./routes/htmRoutes");
 app.use(htmlController);
 
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+// app.use(express.urlencoded({ extended: true }));
+// app.use(express.json());
 
 app.use('/notes', apiController);
 app.use("/", htmlController)
