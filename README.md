@@ -10,6 +10,8 @@ luangu2020@gmail.com
 
 It's an app that allows you to save notes, delete or edit them, saving them to a database in json.
 
+App is deployed in Heroku: https://polar-oasis-02447.herokuapp.com/
+
 ### Table of Contents ###
 
 * Installation
